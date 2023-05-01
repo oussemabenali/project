@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="948.0" prefWidth="1082.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainFrontController">
+    <stylesheets>
+        <URL value="@mainfront.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="266.0" fitWidth="1088.0" layoutX="-10.0" layoutY="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/gym.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="573.0" prefHeight="54.0" prefWidth="505.0" style="-fx-background-color: #E0E0E0;">
+         <children>
+            <ImageView fx:id="coachb" fitHeight="52.0" fitWidth="160.0" onMouseClicked="#coachv" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/coach_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="progb" fitHeight="52.0" fitWidth="70.0" onMouseClicked="#progv" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/prog_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="rendez" fitHeight="51.0" fitWidth="64.0" onMouseClicked="#articlev" pickOnBounds="true" HBox.hgrow="NEVER">
+               <image>
+                  <Image url="@../assets/articles_logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="69.0" onMouseClicked="#reclamationv" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/contact_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="shop" fitHeight="54.0" fitWidth="72.0" onMousePressed="#shopaction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/shop_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="71.0" onMouseClicked="#rendezaction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/rendez_vous.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="76.0" onMouseClicked="#favp" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/fav_logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="70.0" onMouseClicked="#dashboardv" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/dashboard_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="33.0" prefWidth="243.0" text="Get In Touch +012 345 67890" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="panev" layoutX="93.0" layoutY="270.0" prefHeight="661.0" prefWidth="890.0" />
+   </children>
+</AnchorPane>
